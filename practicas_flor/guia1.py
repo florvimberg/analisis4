@@ -2,7 +2,6 @@ import math
 
 from pip._vendor.distlib.compat import raw_input
 
-
 class guia1:
     def getDerivateSin(self):
         x0 = float("0")
@@ -83,10 +82,6 @@ class guia1:
         print(g)
         print(h)
 
-    def funcion(flor):
-        print(flor)
-
 if __name__ == '__main__':
     guia1 = guia1()
     guia1.exercise5()
-    guia1.funcion("perrito")
