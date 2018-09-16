@@ -25,6 +25,7 @@ def csvCreator():
 
     coefficientsLat = []
     coefficientsLong = []
+
     for i in range(0, 10, 1):
         if i == 9:
             coefficientsLat.append(getCoefficients(np.array(heights[i][:-9 or None]), np.array(latitudes[i][:-9 or None])))
@@ -44,6 +45,6 @@ def csvCreator():
         file.write(str(evaluate(np.array(coefficientsLat[index]), np.array(heights[index]), i)) + ",")
         file.write(str(evaluate(np.array(coefficientsLong[index]), np.array(heights[index]), i)) + "\n")
 
-
 if __name__ == '__main__':
     csvCreator()
+    print("finished")

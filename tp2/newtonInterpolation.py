@@ -1,37 +1,21 @@
 import numpy as np
 
-
 def getCoefficients(x, y):
     """x : array of data points
        y : array of f(x)  """
     x.astype(float)
     y.astype(float)
     n = len(x)
-    coefficients = []
-
+    result = []
     for i in range(n):
-        coefficients.append(0)
+        result.append(y[i])
 
-    for k in range(0, n, 1):
-        coefficients[k] = y[k]
+    for k in range(1, n):
 
-        s = 0.0
-        for i in range(0, k, 1):
-            multiplication = 1.0
-            for j in range(0, i, 1):
-                multiplication *= (x[k] - x[j])
+        for i in range(n - 1, k - 1, -1):
+            result[i] = float(result[i] - result[i - 1]) / float(x[i] - x[i - k])
 
-            s += multiplication * coefficients[i]
-
-        coefficients[k] -= s
-
-        q = 1.0
-        for j in range(0, k, 1):
-            q *= (x[k] - x[j])
-
-        coefficients[k] /= q
-
-    return np.array(coefficients)  # return an array of coefficient
+    return np.array(result)  # return an array of coefficient
 
 
 def evaluate(a, x, r):
@@ -40,18 +24,8 @@ def evaluate(a, x, r):
     #    r : the node to interpolate at  '''
 
     x.astype(float)
-    n = len(a)
-    temp = a[0]
-    for i in range(1, n, 1):
-        multiplication = a[i]
-        for j in range(0, i, 1):
-            multiplication *= (r - x[j])
-
-        temp += multiplication
-
+    n = len(a) - 1
+    temp = a[n]
+    for i in range(n - 1, -1, -1):
+        temp = temp * (r - x[i]) + a[i]
     return temp  # return the y_value interpolation
-
-
-# if __name__ == '__main__':
-#     print(getCoefficients(np.arange(0, 5, 1), np.arange(35, 40, 1)))
-#     print(evaluate(getCoefficients(np.arange(0, 5, 1), np.arange(35, 40, 1)), np.arange(0, 5, 1), 2.5))
