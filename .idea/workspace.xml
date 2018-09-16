@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d71ae361-4111-40c1-9f8d-35558f85e65f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/practicas_flor/NewtonRaphson.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp2/fileInterpolator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp2/newtonInterpolation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp2/twoDimensionGraph.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practicas_flor/guia1.py" beforeDir="false" afterPath="$PROJECT_DIR$/practicas_flor/guia1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp2/fileInterpolator.py" beforeDir="false" afterPath="$PROJECT_DIR$/tp2/fileInterpolator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp2/files/interpolation.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tp2/files/interpolation.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +15,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/analisis4$sarasa.coverage" NAME="sarasa Coverage Results" MODIFIED="1537042932647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practicas_flor" />
     <SUITE FILE_PATH="coverage/analisis4$newtonInterpolation.coverage" NAME="newtonInterpolation Coverage Results" MODIFIED="1537043758159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tp2" />
+    <SUITE FILE_PATH="coverage/analisis4$sarasa__1_.coverage" NAME="sarasa (1) Coverage Results" MODIFIED="1537048147691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tp2" />
     <SUITE FILE_PATH="coverage/analisis$HelloWorld.coverage" NAME="HelloWorld Coverage Results" MODIFIED="1533216267217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/analisis$PrimerTp.coverage" NAME="PrimerTp Coverage Results" MODIFIED="1533744746830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/analisis$Car.coverage" NAME="Car Coverage Results" MODIFIED="1533216090051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -25,7 +23,7 @@
     <SUITE FILE_PATH="coverage/analisis4$guia1.coverage" NAME="guia1 Coverage Results" MODIFIED="1535723777661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/analisis4$NewtonRaphson.coverage" NAME="NewtonRaphson Coverage Results" MODIFIED="1537039030985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practicas_flor" />
     <SUITE FILE_PATH="coverage/analisis4$twoDimensionGraph.coverage" NAME="twoDimensionGraph Coverage Results" MODIFIED="1537042381339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tp2" />
-    <SUITE FILE_PATH="coverage/analisis4$fileInterpolator.coverage" NAME="fileInterpolator Coverage Results" MODIFIED="1537046791315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tp2" />
+    <SUITE FILE_PATH="coverage/analisis4$fileInterpolator.coverage" NAME="fileInterpolator Coverage Results" MODIFIED="1537051235673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tp2" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1288581643">
@@ -66,7 +64,7 @@
     <session id="991487798">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.8" value="2" />
@@ -76,27 +74,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="csv" value="4" />
-          <entry key="py" value="17" />
+          <entry key="csv" value="8" />
+          <entry key="py" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="17" />
+          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="Python" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="csv" value="2" />
+          <entry key="csv" value="3" />
           <entry key="dummy" value="17" />
-          <entry key="py" value="4060" />
+          <entry key="py" value="4619" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="19" />
-          <entry key="Python" value="4060" />
+          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="Python" value="4619" />
         </counts>
       </usages-collector>
     </session>
@@ -119,7 +117,7 @@
         <entry file="file://$PROJECT_DIR$/tp2/twoDimensionGraph.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
-              <caret line="26" column="16" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
                 <marker date="1537042823370" expanded="true" signature="61:62" ph="..." />
@@ -129,23 +127,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tp2/newtonInterpolation.py">
+        <entry file="file://$PROJECT_DIR$/tp2/fileInterpolator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="28" />
+            <state relative-caret-position="360">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+                <marker date="1537051235665" expanded="true" signature="145:147" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tp2/fileInterpolator.py">
+        <entry file="file://$PROJECT_DIR$/tp2/files/interpolation.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="41" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-                <marker date="1537046791309" expanded="true" signature="145:147" ph="..." />
-              </folding>
+            <state relative-caret-position="314">
+              <caret line="3001" column="14" selection-start-line="3001" selection-end-line="3002" />
             </state>
           </provider>
         </entry>
@@ -158,6 +156,11 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>10000,</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -179,6 +182,7 @@
         <option value="$PROJECT_DIR$/tp2/twoDimensionGraph.py" />
         <option value="$PROJECT_DIR$/practicas_flor/sarasa.py" />
         <option value="$PROJECT_DIR$/tp2/newtonInterpolation.py" />
+        <option value="$PROJECT_DIR$/tp2/sarasa.py" />
         <option value="$PROJECT_DIR$/tp2/files/interpolation.csv" />
         <option value="$PROJECT_DIR$/tp2/fileInterpolator.py" />
       </list>
@@ -262,28 +266,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.fileInterpolator">
-    <configuration name="NewtonRaphson" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="analisis4" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practicas_flor" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practicas_flor/NewtonRaphson.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="fileInterpolator" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="analisis4" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -320,6 +302,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tp2/newtonInterpolation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sarasa (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="analisis4" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tp2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tp2/sarasa.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -373,19 +377,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.NewtonRaphson" />
       <item itemvalue="Python.twoDimensionGraph" />
       <item itemvalue="Python.sarasa" />
       <item itemvalue="Python.newtonInterpolation" />
       <item itemvalue="Python.fileInterpolator" />
+      <item itemvalue="Python.sarasa (1)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.fileInterpolator" />
+        <item itemvalue="Python.sarasa (1)" />
         <item itemvalue="Python.newtonInterpolation" />
         <item itemvalue="Python.sarasa" />
         <item itemvalue="Python.twoDimensionGraph" />
-        <item itemvalue="Python.NewtonRaphson" />
       </list>
     </recent_temporary>
   </component>
@@ -413,15 +417,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19466881" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19466881" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.269863" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39863014" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29726028" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.44383562" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
@@ -429,7 +432,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32876712" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32739726" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32739726" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -443,6 +446,24 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tp2/fileInterpolator.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/1653813907/unicodedata.py" />
@@ -485,13 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/-1199943126/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="4206" column="8" selection-start-line="4206" selection-start-column="8" selection-end-line="4206" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/practicas_flor/NewtonRaphson.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -502,24 +516,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tp2/files/positions.csv">
+    <entry file="file://$PROJECT_DIR$/tp2/sarasa.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="30" selection-start-line="30" selection-end-line="30" selection-end-column="42" />
+        <state relative-caret-position="120">
+          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tp2/files/interpolation.csv">
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/tokenize.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="5001" lean-forward="true" selection-start-line="5001" selection-end-line="5001" />
+        <state relative-caret-position="203">
+          <caret line="446" selection-start-line="446" selection-end-line="446" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/-1199943126/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="1124" column="8" selection-start-line="1124" selection-start-column="8" selection-end-line="1124" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp2/files/positions.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-160">
+          <caret line="465" column="34" lean-forward="true" selection-start-line="465" selection-start-column="34" selection-end-line="465" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tp2/newtonInterpolation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tp2/twoDimensionGraph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="26" column="16" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
             <marker date="1537042823370" expanded="true" signature="61:62" ph="..." />
@@ -527,21 +562,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tp2/newtonInterpolation.py">
+    <entry file="file://$PROJECT_DIR$/tp2/fileInterpolator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="28" />
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1537051235665" expanded="true" signature="145:147" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tp2/fileInterpolator.py">
+    <entry file="file://$PROJECT_DIR$/tp2/files/interpolation.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="41" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <marker date="1537046791309" expanded="true" signature="145:147" ph="..." />
-          </folding>
+        <state relative-caret-position="314">
+          <caret line="3001" column="14" selection-start-line="3001" selection-end-line="3002" />
         </state>
       </provider>
     </entry>
