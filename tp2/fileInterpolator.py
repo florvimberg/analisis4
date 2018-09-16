@@ -3,8 +3,8 @@ import numpy as np
 from tp2.newtonInterpolation import getCoefficients
 from tp2.newtonInterpolation import evaluate
 
-def csvCreator():
 
+def csvCreator():
     file = open("files/positions.csv", 'r')
 
     reader = csv.reader(file)
@@ -43,6 +43,7 @@ def csvCreator():
         file.write(str(i) + ",")
         file.write(str(evaluate(np.array(coefficientsLat[index]), np.array(heights[index]), i)) + ",")
         file.write(str(evaluate(np.array(coefficientsLong[index]), np.array(heights[index]), i)) + "\n")
+
 
 if __name__ == '__main__':
     csvCreator()
