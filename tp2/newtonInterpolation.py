@@ -6,16 +6,23 @@ def getCoefficients(x, y):
     x.astype(float)
     y.astype(float)
     n = len(x)
-    result = []
-    for i in range(n):
-        result.append(y[i])
+    coefficients = [y[0]]
 
     for k in range(1, n):
+        q = 1
+        for j in range(0,k):
+            q *= (x[k] - x[j])
 
-        for i in range(n - 1, k - 1, -1):
-            result[i] = float(result[i] - result[i - 1]) / float(x[i] - x[i - k])
+        s = 0
+        for i in range(0, k):
+            aux = 1
+            for j in range(0, i):
+                aux *= (x[k] - x[j])
+            s += (coefficients[i] * aux)
 
-    return np.array(result)  # return an array of coefficient
+        coefficients.append((y[k] - s)/q)
+
+    return np.array(coefficients)  # return an array of coefficient
 
 
 def evaluate(a, x, r):
@@ -24,8 +31,19 @@ def evaluate(a, x, r):
     #    r : the node to interpolate at  '''
 
     x.astype(float)
-    n = len(a) - 1
-    temp = a[n]
-    for i in range(n - 1, -1, -1):
-        temp = temp * (r - x[i]) + a[i]
-    return temp  # return the y_value interpolation
+    n = len(a)
+    result = 0
+
+    for i in range(0,n):
+        temp = 1
+        for j in range(0,i):
+            temp *= (r - x[j])
+
+        result += (temp * a[i])
+
+    return result  # return the y_value interpolation
+
+if __name__ == '__main__':
+    c = getCoefficients(np.array([1,2,3,4,5,6]), np.array([1,4,9,16,25,36]))
+    print(c)
+    print (evaluate(c,np.array([1,2,3,4,5,6]),12 ))
