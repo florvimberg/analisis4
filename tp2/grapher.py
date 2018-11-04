@@ -4,7 +4,7 @@ from mpl_toolkits.mplot3d import Axes3D
 
 
 def printGraphALAT():
-    file = open("files/positions.csv", 'r')
+    file = open("files/interpolation.csv", 'r')
 
     reader = csv.reader(file)
 
@@ -17,19 +17,26 @@ def printGraphALAT():
         xValues.append(row[0])
         yValues.append(row[1])
 
-    plt.figure(num=1, figsize=(250, 100))
-    for x, y in zip(reversed(xValues), reversed(yValues)):
-        plt.plot(x, y, 'co')
+    xTemp = []
+    yTemp = []
+    i = 0
+    while i < len(xValues):
+        xTemp.append(float(xValues[i]))
+        yTemp.append(float(yValues[i]))
+        i += 10
+
+    x = list(map(float, reversed(xTemp)))
+    y = list(map(float, reversed(yTemp)))
+    plt.plot(x, y, 'co')
     plt.xlabel('Altura')
     plt.ylabel('Latitud')
     plt.title('Latitud en funcion de la altura')
-    # plt.axis([-1000, 51000, 33, 85])
     plt.show()
     print("finished")
 
 
 def printGraphALON():
-    file = open("files/positions.csv", 'r')
+    file = open("files/interpolation.csv", 'r')
 
     reader = csv.reader(file)
 
@@ -42,19 +49,26 @@ def printGraphALON():
         xValues.append(row[0])
         yValues.append(row[2])
 
-    plt.figure(num=1, figsize=(250, 100))
-    for x, y in zip(reversed(xValues), reversed(yValues)):
-        plt.plot(x, y, 'co')
+    xTemp = []
+    yTemp = []
+    i = 0
+    while i < len(xValues):
+        xTemp.append(float(xValues[i]))
+        yTemp.append(float(yValues[i]))
+        i += 10
+
+    x = list(map(float, reversed(xTemp)))
+    y = list(map(float, reversed(yTemp)))
+    plt.plot(x, y, 'co')
     plt.xlabel('Altura')
     plt.ylabel('Longitud')
     plt.title('Longitud en funcion de la altura')
-    # plt.axis([-1000, 51000, 33, 85])
     plt.show()
     print("finished")
 
 
 def printGraph():
-    file = open("files/positions.csv", 'r')
+    file = open("files/interpolation.csv", 'r')
 
     reader = csv.reader(file)
     fig = plt.figure()
@@ -71,9 +85,9 @@ def printGraph():
         yValues.append(row[1])  # latitud
         zValues.append(row[0])  # altura
 
-    x = list(map(float, xValues))
-    y = list(map(float, yValues))
-    z = list(map(float, zValues))
+    x = list(map(float, reversed(xValues)))
+    y = list(map(float, reversed(yValues)))
+    z = list(map(float, reversed(zValues)))
     ax.scatter3D(x, y, z, cmap='Greens')
     ax.set_title('Altura, Latitud, Longitud')
     ax.set_xlabel('longitud')
