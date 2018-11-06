@@ -18,7 +18,7 @@ def runge_kutta(y, interval, h, t, m, k):
     newY = y + (h * (k1 + 2 * k2 + 2 * k3 + k4)) / 6
     newT = t + h
 
-    runge_kutta(newY, interval, h, newT, m, k)
+    return runge_kutta(newY, interval, h, newT, m, k)
 
 
 def calculate(t, y, m, k):
@@ -30,9 +30,7 @@ def run():
 
     reader = csv.reader(file)
 
-    coefs = [0 for i in range(5)]
-
-    viewers = [[0] * 10 for i in range(5)]
+    coefs = [0 for i in range(5)] # los k
 
     count = 0
     for row in reader:
@@ -44,7 +42,7 @@ def run():
 
     reader = csv.reader(file)
 
-    viewers = [[0] * 10 for i in range(5)]
+    viewers = [[0] * 10 for i in range(5)] # matriz con los valores
 
     count = 0
     for row in reader:
@@ -53,6 +51,13 @@ def run():
             viewers[count][i] = val
 
         count += 1
+
+    for t in range(0, 10, 1):
+        file = open("files/RungeKuttaT" + str(t) + ".csv", 'w')
+        for k in range(5):
+            for m in range(10):
+                file.write(str(runge_kutta(viewers[k][m]/2, [t, t+1], 0.25, t, viewers[k][m], coefs[k]))) + file.write(", ")
+            file.write("\n")
 
 
 if __name__ == '__main__':
