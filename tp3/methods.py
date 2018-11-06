@@ -53,14 +53,14 @@ def run():
         count += 1
 
     for t in range(0, 10, 1):
-        file = open("files/logisticCurveT" + str(t) + ".csv", 'w')
+        file = open("files/RungeKuttaT" + str(t) + ".csv", 'w')
         for k in range(5):
             for m in range(10):
                 if m == 9:
-                    file.write(
-                        str(runge_kutta(viewers[k][m] / 2, [t, t + 1], 0.25, t, viewers[k][m], coefs[k])))
+                    file.write(str(
+                        runge_kutta(logisticCurve(viewers[k][m], coefs[k], t), [t, t + 1], 0.25, t, viewers[k][m],coefs[k])))
                 else:
-                    file.write(str(runge_kutta(viewers[k][m]/2, [t, t+1], 0.25, t, viewers[k][m], coefs[k]))) + file.write(", ")
+                    file.write(str(runge_kutta(logisticCurve(viewers[k][m],coefs[k],t), [t, t+1], 0.25, t, viewers[k][m], coefs[k]))) + file.write(", ")
             file.write("\n")
 
 
