@@ -21,7 +21,7 @@ def runge_kutta(y, interval, h, t, m, k):
     return runge_kutta(newY, interval, h, newT, m, k)
 
 
-def calculate(t, y, m, k):
+def calculate(_, y, m, k):
     return k * y * (m - y)
 
 
@@ -30,7 +30,7 @@ def run():
 
     reader = csv.reader(file)
 
-    coefs = [0 for i in range(5)] # los k
+    coefs = [0 for _ in range(5)]
 
     count = 0
     for row in reader:
@@ -42,7 +42,7 @@ def run():
 
     reader = csv.reader(file)
 
-    viewers = [[0] * 10 for i in range(5)] # matriz con los valores
+    viewers = [[0] * 10 for _ in range(5)]
 
     count = 0
     for row in reader:
