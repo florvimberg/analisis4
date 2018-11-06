@@ -1,6 +1,8 @@
 import math
 import csv
 
+from numpy import genfromtxt
+
 
 def logisticCurve(m, k, t):
     return m / (1 + math.e ** (-k * m * t))
@@ -23,6 +25,21 @@ def runge_kutta(y, interval, h, t, m, k):
 
 def calculate(_, y, m, k):
     return k * y * (m - y)
+
+def difs():
+    for t in range(10):
+        results = open("files/results/resultT" + str(t) + ".csv", 'w')
+
+        rkArray = genfromtxt('files/RungeKutta/RungeKuttaT' + str(t) + '.csv', delimiter=',')
+        lcArray = genfromtxt('files/logisticCurve/logisticCurveT' + str(t) + '.csv', delimiter=',')
+
+        for i in range(5):
+            for j in range(10):
+                if j == 9:
+                    results.write(str(abs(float(lcArray[i][j]) - float(rkArray[i][j]))))
+                else:
+                    results.write(str(abs(float(lcArray[i][j]) - float(rkArray[i][j])))) + results.write(", ")
+            results.write("\n")
 
 
 def run():
@@ -65,4 +82,4 @@ def run():
 
 
 if __name__ == '__main__':
-    run()
+    difs()
